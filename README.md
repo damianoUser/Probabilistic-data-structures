@@ -77,8 +77,11 @@ hash functions and the number of **trailing zeros** in hashed values.
 The implementation uses 128-bit MurmurHash (`mmh3.hash128`) to safely handle
 large streams (up to \(2^{64}\) distinct elements).
 
-> Note: the classical bias-correction factor (≈ 0.77351) is documented but not applied,
-> to keep the implementation closer to the original algorithmic intuition.
+---
+
+## Literature used
+- Mining of massive Datasets (mmds) 3rd edition, Jure Leskovec, Anand Rajaraman, 2020
+- Adam Kirsch and Michael Mitzenmacher, Less Hashing, Same Performance: Building a Better Bloom Filter, 2006
 
 ---
 
